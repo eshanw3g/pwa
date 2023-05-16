@@ -6,7 +6,7 @@ export default async function request(method, url, params, { responseType, auth,
   const config = {
     method,
     url,
-    baseURL: 'http://18.209.167.114:4000/api',
+    baseURL: 'https://pwa-api.onrender.com/api',
     [body]: params || {},
     responseType
   };
