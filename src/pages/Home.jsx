@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { Avatar, Badge, Box, Stack } from '@mui/material';
 import { Notifications } from '@mui/icons-material';
 import { clearSession } from '../functions/session';
-import { concat, toUpper } from 'lodash';
+import { toUpper } from 'lodash';
 
 function Home() {
   const user = JSON.parse(localStorage.getItem('user'));
