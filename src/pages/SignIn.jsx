@@ -97,7 +97,12 @@ function SignIn({ pathname }) {
           Sign In
         </Button>
       </Stack>
-      <AlertDialog open={alert} severity={severity} message={message} onClose={handleAlertClose} />
+      <AlertDialog
+        open={alert}
+        severity={severity || null}
+        message={message}
+        onClose={handleAlertClose}
+      />
       <ProgressDialog open={progress} />
     </Stack>
   );

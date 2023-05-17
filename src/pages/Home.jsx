@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Avatar, Badge, Box, Stack } from '@mui/material';
 import { Notifications } from '@mui/icons-material';
@@ -8,6 +8,10 @@ import { toUpper } from 'lodash';
 function Home() {
   const user = JSON.parse(localStorage.getItem('user'));
   const navigate = useNavigate();
+
+  useEffect(() => {
+    console.log('public url is', process.env.PUBLIC_URL);
+  }, []);
 
   const signOut = () => {
     clearSession();
